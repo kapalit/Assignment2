@@ -36,11 +36,6 @@ int main()
         students.push_back(student);
     }
 
-#ifdef _DEBUG
-    // Debug builds only: show what was loaded.
-    for (const STUDENT_DATA& s : students)
-        std::cout << s.firstName << " " << s.lastName << std::endl;
-#endif
 
     return 0;
 }
